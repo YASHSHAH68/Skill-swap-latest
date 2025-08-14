@@ -11,7 +11,9 @@ class Country(models.Model):
     name = models.CharField(max_length=100)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    
+
+    def __str__(self):
+        return self.name    
 
 class State(models.Model):
 
@@ -25,6 +27,8 @@ class State(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
+    def __str__(self):
+        return self.name
 
 class City(models.Model):
 
@@ -38,6 +42,8 @@ class City(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
+    def __str__(self):
+        return self.name
 
 class University(models.Model):
 
@@ -57,6 +63,8 @@ class University(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
+    def __str__(self):
+        return self.name
 
 def university_upload_to(instacne , filename):
     return os.path.join('universities_images',instacne.university.name,filename)
@@ -80,6 +88,8 @@ class Department(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
    
+    def __str__(self):
+        return self.name
 
 class Branch(models.Model):
    
@@ -95,5 +105,5 @@ class Branch(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
-  
-
+    def __str__(self):
+        return self.name
