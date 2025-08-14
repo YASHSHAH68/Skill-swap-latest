@@ -8,3 +8,9 @@ def AboutView(request):
 
 def ContactView(request):
     return render(request , "core/contact.html")
+
+def TermsView(request):
+    return render(request , "core/terms.html")
+
+def PrivacyView(request):
+    return render(request , "core/privacy.html")

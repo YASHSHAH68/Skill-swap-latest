@@ -7,4 +7,4 @@ def CourseDetailView(request):
     return render(request , "category_skills/course-details.html")
 
 def InstructorView(request):
-    return render(request , "categoryt_skills/instructors.html")
+    return render(request , "category_skills/instructors.html")

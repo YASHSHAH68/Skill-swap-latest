@@ -4,7 +4,7 @@ from . import views
 app_name = 'category_skills'
 
 urlpatterns = [
-    path('courses/' , views.CourseView , name="courses"),
-    path('courses/detail/' , views.CourseDetailView , name="courses/detail"),
-    path('instructors/', views.InstructorView , name="instructor")
+    path('' , views.CourseView , name="courses"),
+    path('courses_detail/' , views.CourseDetailView , name="course_details"),
+    path('instructors/', views.InstructorView , name="instructors")
 ]

@@ -6,20 +6,18 @@
       <a href="{% url 'core:home' %}" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Learner</h1>
+        <h1 class="sitename">Skill Swap</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="{% url 'core:home' %}" class="active">Home</a></li>
           <li><a href="{% url 'core:about' %}">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="instructors.html">Instructors</a></li>
+          <li><a href="{% url 'category_skills:courses' %}">Courses</a></li>
+          <li><a href="{% url 'category_skills:instructors' %}">Instructors</a></li>
           <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="course-details.html">Course Details</a></li>
-              <li><a href="terms.html">Terms</a></li>
-              <li><a href="privacy.html">Privacy</a></li>
+              <li><a href="{% url 'category_skills:course_details' %}">Course Details</a></li>
               <li><a href="404.html">404</a></li>
             </ul>
           </li>
@@ -46,7 +44,8 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="enroll.html">Enroll Now</a>
-
+      <!-- <a class="btn-getstarted" href="enroll.html">Enroll Now</a> -->
+      <a class="btn-getstarted" href="enroll.html">Login</a>
+      <a class="btn-getstarted" href="{% url 'accounts:register' %}">Register</a>
     </div>
   </header>

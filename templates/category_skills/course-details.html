@@ -2,11 +2,9 @@
 
 {% load static %}
 
-{% block title %} Courses Details | Skill Swap Project 
+{% block title %}Courses Details | Skill Swap {% endblock %}
 
 {% block mainsection %}
-
-
     <!-- Page Title -->
     <div class="page-title light-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
@@ -313,7 +311,7 @@
 
                     <div class="review-item">
                       <div class="reviewer-info">
-                        <img src="{%static 'assets/img/person/person-m-5.webp' %}" alt="Reviewer" class="reviewer-avatar">
+                        <img src="{% static 'assets/img/person/person-m-5.webp' %}" alt="Reviewer" class="reviewer-avatar">
                         <div class="reviewer-details">
                           <h6>David Thompson</h6>
                           <div class="review-rating">
@@ -452,5 +450,3 @@
     </section><!-- /Course Details Section -->
 
 {% endblock %}
-
-  
